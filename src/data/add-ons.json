@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Online service",
+    "description": "Access to platform",
+    "price": {
+      "monthly": 1,
+      "yearly": 10
+    }
+  },
+  {
+    "title": "Facility",
+    "description": "Access to different locations",
+    "price": {
+      "monthly": 2,
+      "yearly": 20
+    }
+  },
+  {
+    "title": "Competitions",
+    "description": "Get to showcase your swim talent",
+    "price": {
+      "monthly": 2,
+      "yearly": 20
+    }
+  }
+]

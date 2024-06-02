@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-lexend;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 640px) {
+
+  /* 640px is the default min-width for sm in Tailwind */
+
+
+body {
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.input {
+  width: 100%;
+  padding: 2px;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.25rem;
+}
+.btn {
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 0.25rem;
+  color: white;
+}
+.btn-primary {
+  background-color: #38A169;
+}
+.btn-primary:hover {
+  background-color: #48BB78;
+}
+.btn-secondary {
+  background-color: #718096;
+}
+.btn-secondary:hover {
+  background-color: #90A4AE;
+}
+.checkbox {
+  appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #A0AEC0;
+  border-radius: 0.25rem;
+  background-color: white;
+  transition: background-color 0.2s ease;
+}
+.checkbox:checked {
+  background-color: #4FD1C5;
+  border-color: #4FD1C5;
+}
+.checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 6px;
+  height: 12px;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+}
+.notification {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: lightgreen;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.notification.show {
+  opacity: 1;
+}
+
+/* Animation */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.5s ease forwards;
+}
+@media screen and (min-width: 640px) {
+  .sidebar {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 8px;
+    width: 274px;
+    height: calc(100vh - 32px);
+    border-radius: 8px;
+    background-position: center;
+  }
+}
+
+/* Step Component */
+.step {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+/* Responsive Styles for Step Component */
+@media screen and (min-width: 640px) {
+  .step {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
+.login-card__image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.login-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-card__content {
+  padding: 32px;
+  flex: 1;
+}
+
+.login-card__header {
+  text-align: center;
+}
+
+.login-card__header img {
+  width: 100px;
+  height: 100px;
+}
+
+.login-card__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.login-card__subtitle {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.login-card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-card__form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.login-card__form input {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.login-card__form button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-card__form .login-button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.login-card__form .register-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+}

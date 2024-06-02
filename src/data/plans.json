@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Mini-baby",
+    "price": {
+      "monthly": 9,
+      "yearly": 90
+    },
+    "icon": "/images/icons/baby.svg",
+    "freeTrialDescription": "2 months free"
+  },
+  {
+    "name": "Beginner",
+    "price": {
+      "monthly": 12,
+      "yearly": 120
+    },
+    "icon": "/images/icons/swimpool.svg",
+    "freeTrialDescription": "2 months free"
+  },
+  {
+    "name": "Advance",
+    "price": {
+      "monthly": 15,
+      "yearly": 150
+    },
+    "icon": "/images/icons/winner.svg",
+    "freeTrialDescription": "2 months free"
+  },
+  {
+    "name": "Pro",
+    "price": {
+      "monthly": 15,
+      "yearly": 150
+    },
+    "icon": "/images/icons/medal.svg",
+    "freeTrialDescription": "2 months free"
+  }
+]
